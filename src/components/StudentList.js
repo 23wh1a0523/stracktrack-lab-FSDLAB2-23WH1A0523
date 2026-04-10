@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function StudentList() {
   const [students, setStudents] = useState([]);
-  const [search, setSearch] = useState(""); // keep search
+  const [search, setSearch] = useState(""); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -28,9 +28,8 @@ function StudentList() {
       .catch(err => console.log(err));
   };
 
-  // Filter students by search
   const filteredStudents = students.filter(student =>
-    student.name.toLowerCase().includes(search.toLowerCase())
+    student.name && student.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (

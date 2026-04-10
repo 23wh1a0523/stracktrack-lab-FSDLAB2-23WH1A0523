@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import StudentList from "./components/list";
-import AddStudent from "./components/add";
-import EditStudent from "./components/edit";
-import StudentDetails from "./components/details";
+import StudentList from "./components/StudentList";
+import AddStudent from "./components/addStudent";
+import EditStudent from "./components/EditStudent";
+import StudentDetails from "./components/StudentDetails";
 
 function App() {
   return (
